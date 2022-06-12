@@ -1,0 +1,128 @@
+    /* SMALL LAPTOP NAVIGATION LINKS CSS STYLING */
+    /* body{
+      background-color: red;
+    } */
+
+    
+
+    .links {
+    position: fixed;
+    z-index: 99;
+    top: 120px;
+    width: 100%;
+    left: -1%;
+    height: 100%;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    background: #fff;
+    display: none;
+    transition: left 0.3s ease;
+    top: 30px;
+    bottom: 30px;
+    line-height: 40px;
+  }
+
+  .active_nav .links {
+    margin-top: -5px;
+  }
+
+  .active_nav .navbar .links {
+    left: 0px;
+  }
+
+
+  .links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links ul li .mynavbtn {
+    color: rgba(32,41,47,.6);
+  }
+
+  .links a{
+    font-size: 20px;
+  }
+
+  .links .pricing {
+    position: fixed;
+    top: 92%;
+    width: 90%;
+    color: #fff;
+    background-color: #ff4a9e;
+    padding: 10px 0;
+    border-radius: 50px;
+  }
+
+  .pricing a {
+    color: #fff;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0;
+}
+/* SMALL LAPTOP NAVIGATION LINKS CSS STYLING END HERE */
+
+/* SMALL LAPTOP NAVIGATION FORM CSS STYLING */
+  form {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    opacity: 0;
+    pointer-events: none;
+    /* transition: top 0.3s ease, opacity 0.1s ease; */
+  }
+
+  .form .active{
+    top: 95px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .form:before{
+    position: absolute;
+    content: " ";
+    top: -13px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border: 10px solid transparent;
+    border-bottom-color: #1e232b;
+    margin: -20px 0 0;
+  }
+
+  .form:after{
+    position: absolute;
+    content: '';
+    height: 60px;
+    padding: 2px;
+    background: #1e232b;
+    border-radius: 2px;
+    min-width: calc(100% + 20px);
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* SMALL LAPTOP NAVIGATION FORM CSS STYLING END HERE */
+
+
+  /* SMALL LAPTOP NAVIGATION ICONS CSS STYLING */
+  .menu-icon{
+    display: block;
+  }
+
+  .search-icon,
+  .menu-icon span{
+    display: block;
+  }
+
+  .menu-icon span .hide,
+  .search-icon .hide{
+    display: none;
+  }
+    .cancel-icon.show{
+    display: block;
+  }
+  /* SMALL LAPTOP NAVIGATION ICONS CSS STYLING END HERE*/

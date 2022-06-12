@@ -1,0 +1,12 @@
+  .menu-icon,
+  .cancel-icon,
+  .search-icon{
+  margin: 0;
+}
+.navbar form{
+  right: 30px;
+}
+
+.give {
+  display: none;
+}

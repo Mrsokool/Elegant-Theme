@@ -1,0 +1,410 @@
+/*   HEADER SECTION STYLING START HERE  */
+.headercontainer {
+    background-image: url(images/home/landing-hero-background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    position: relative;
+}
+
+.headercontainer::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #130e87, transparent);
+    z-index: 1;
+}
+
+/*       STICKER BAR STYLING START HERE */
+.nav-hold{
+  position: fixed;
+  width: 100%;
+  height: max-content;
+  z-index: 10;
+}
+.long{
+  height: 500px;
+}
+.stickerbar {
+  background-color: #8f42ec;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding: 5px 0;
+}
+
+.sticker {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.learn a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 30px;
+  background-color: #ff4a9e;
+  border-radius: 20px;
+}
+
+
+/*       STICKER BAR STYLING END HERE */
+
+/*   NAVIGATION BAR STYLYING START HERE */
+
+.navbg {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    padding: 25px 0;
+    transition: .3s ease;
+}
+
+
+.navbar {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*   LOGO CONTAINER STYLING START HERE   */
+.logo {
+    width: 5%;
+    min-width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 10px;
+}
+
+.logo img {
+    width: 120px;
+    height: 100%;
+}
+
+.logo2 {
+  display: none;
+}
+
+/*   LOGO CONTAINER STYLING START HERE   */
+
+/* SEARCH BAR CONTAINER STYLING START HERE  */
+.searchbar {
+    width: 25%;
+    min-width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.fas {
+  color: #fff;
+}
+  
+ .form{
+    display: flex;
+    height: 30px;
+    padding: 2px;
+    background: #1e232b00;
+    min-width: 18%!important;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+  }
+
+  .form input::placeholder {
+    color: #fff;
+  }
+  
+  .search-data{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    font-weight: 500;
+    background: none;
+    outline: none;
+  }
+  
+  button{
+    padding: 0 15px;
+    color: #fff;
+    font-size: 17px;
+    background: #ff3c0000;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+  }
+
+  .menu-icon,
+  .cancel-icon,
+  .search-icon{
+    width: 40px;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+
+  .menu-icon span,
+  .cancel-icon,
+  .search-icon {
+    display: none;
+}
+
+/* SEARCH BAR CONTAINER STYLING END HERE  */
+
+/*   NAVIGATION LINKS STYLING STARTS HERE */
+.links {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbtn {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    align-items: flex-end;
+    font-size: 1.1rem;
+}
+
+.navbtn li {
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbtn li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+
+.pricing {
+    width: 15%;
+}
+
+.pricing a {
+    text-decoration: none;
+    color: #ff4a9e;
+    font-size: 1.1rem;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+/*   DROP DOWN BUTTON STYLING START HERE */
+.dropdown {
+  width: 520px;
+  display: none;
+  position: absolute;
+  margin-left: -250px;
+  z-index: 1px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+.product .dropdown {
+  width: 400px;
+  margin-left: -150px;
+}
+
+.contact .dropdown {
+  width: 400px;
+  margin-left: -150px;
+}
+
+.dropdown .dropbtn {
+  align-items: center;
+  padding: 20px 20px;
+}
+
+
+li:hover .dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropbtn {
+  background-color: #fff;
+}
+
+.dropbtn .navbutton {
+  padding: 20px 0;
+}
+
+.navbutton .dropdownbtn {
+  color: #8f42ec;
+}
+
+.learn_more {
+  background-color: #3776ff;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown .learn_more {
+  margin-bottom: 40px;
+}
+
+/* .dropdown .navbutton:hover {
+  background-color: pink;
+  transition-duration: 1ms;
+} */
+
+/* FORM STYLING FOR ACCOUNT START HERE */
+.account {
+  width: 300px;
+  height: 100%;
+  display: none;
+  position: absolute;
+  margin-left: -100px;
+  z-index: 1px;
+  text-align: left;
+  padding-top: 30px;
+} 
+
+li:hover .account {
+  display: flex;
+  flex-direction: column;
+}
+
+.form2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+ .input1 {
+  margin: 10px 0;
+  padding: 10px 30px;
+  border: none;
+}
+
+.input1:focus {
+  border-style: none;
+  outline: none;
+  border-radius: 15px;
+} 
+
+/* FORM STYLING ENDS HERE */
+
+/*   DROP DOWN BUTTON STYLING ENDS HERE */
+
+/*   NAVIGATION LINKS STYLING ENDS HERE */
+
+/* FIXED NAV-BAR CSS STYLING START HERE */
+
+.active_nav {
+    background-color: #fff;
+    height: 20px;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
+  }
+
+  .active_nav .navbg {
+  height: 30px;
+  }
+
+  .active_nav .logo .logo1 {
+    display: none;
+  }
+
+  .active_nav .logo .logo2 {
+    display: block;
+  }
+
+  .active_nav .logo .logo2 {
+    width: 90%;
+    height: 200%;
+    margin-top: -10%;
+  }
+
+  .active_nav form{
+    border: 1px solid rgba(32,41,47,.6);
+  }
+
+  .active_nav form input::placeholder {
+    color: rgba(32,41,47,.6);
+  }
+
+  .active_nav .search-data{
+    color: rgba(32,41,47,.6);
+  }
+
+  .active_nav button{
+    color: rgba(32,41,47,.6);
+  }
+
+  
+  .active_nav .links .navbtn .mynavbtn {
+    color: rgba(32,41,47,.6);
+  }
+  
+  .active_nav .links .navbtn .mynavbtn:hover {
+    /* color: #fff; */
+    height: 30px;
+  }
+
+  .active_nav .pricing a {
+    padding: 15px 50px;
+}
+
+  .active_nav .navbar .links .pricing a{
+    background-color: #ff4a9e;
+    color: #fff;
+  }
+  
+  .active_nav .navbtn  {
+    color: #fff;
+    height: 80%;
+  }
+
+  /* FIXED NAV-BAR CSS STYLING END HERE    */
+  
+/*   NAVIGATION BAR STYLYING ENDS HERE */
+
+
+/*   HEADER SECTION STYLING END HERE HERE  */
+
+
+  /* MEDIUM SCREEN LAPTOP STYLING START HERE  */
+  @media (max-width: 1245px) {
+    .navbar{
+      padding: 0;
+    }
+    .links {
+      justify-content: center;
+  }
+  }
+/* MEDIUM SCREEN LAPTOP STYLING START HERE  */
